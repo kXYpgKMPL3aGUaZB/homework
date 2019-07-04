@@ -33,7 +33,7 @@ class Kernel extends ConsoleKernel
         $schedule->call(function () {
                 Logger::create(['action' => 'console:test']);
             })
-            ->cron('*/1 * * * *')
+            ->cron('*/3 * * * *')
             ->when(function () {
                 return Cron::where('name', 'test')->value('enabled');
             });

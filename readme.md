@@ -17,5 +17,10 @@ $ docker-compose exec web php artisan migrate:fresh --seed
 
 If config got cached
 ```
-docker-compose exec web php artisan config:clear
+$ docker-compose exec web php artisan config:clear
+```
+
+Stop docker
+```
+$ docker-compose stop
 ```

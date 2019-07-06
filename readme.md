@@ -16,9 +16,16 @@ $ docker-compose exec web php artisan migrate:fresh --seed
 $ docker-compose exec web service cron start
 ```
 
+To check if it works, in browser open http://127.0.0.1:8080/
+
 If config got cached
 ```
 $ docker-compose exec web php artisan config:clear
+```
+
+After every "$ docker-compose up -d", manualy start cron
+```
+$ docker-compose exec web service cron start
 ```
 
 Stop docker

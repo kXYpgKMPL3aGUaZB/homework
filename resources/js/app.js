@@ -35,4 +35,7 @@ new Vue({
     el: '#app',
     template: '<App/>',
     components: { App },
+    mounted() {
+        console.info('Developed by Guntis V.');
+    }
 });

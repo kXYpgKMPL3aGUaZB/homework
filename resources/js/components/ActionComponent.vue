@@ -1,9 +1,9 @@
 <template>
     <div class="container py-2">
-        <div class="row" v-if="!status">
+        <div class="row">
             <div class="col">
                 <div class="alert alert-info" role="alert">
-                    Command schedule is disabled.
+                    Command schedule is <b>{{ status ? 'enabled' : 'disabled' }}</b>.
                 </div>
             </div>
         </div>
